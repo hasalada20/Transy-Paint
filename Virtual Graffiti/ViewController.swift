@@ -16,6 +16,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet weak var settingsButton: UIButton!
     @IBOutlet weak var stickersButton: UIButton!
+    @IBOutlet weak var placeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,12 +33,17 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Set the scene to the view
         sceneView.scene = scene
         
+        // MARK: - BUTTON SETUP
+        
         settingsButton.layer.borderWidth = 1
         settingsButton.layer.cornerRadius = 10
         settingsButton.layer.borderColor = UIColor.white.cgColor
         stickersButton.layer.borderWidth = 1
         stickersButton.layer.cornerRadius = 10
         stickersButton.layer.borderColor = UIColor.white.cgColor
+        placeButton.layer.borderWidth = 1
+        placeButton.layer.cornerRadius = 15
+        placeButton.layer.borderColor = UIColor.white.cgColor
         
     }
     
@@ -83,6 +89,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
         
     }
+    
+// MARK: - ACTIONS
     
     // Function called when Settings button is pressed
     @IBAction func SettingsButtonPressed(_ sender: Any) {
