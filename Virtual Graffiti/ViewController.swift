@@ -33,15 +33,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Set the scene to the view
         sceneView.scene = scene
         
-        settingsButton.layer.borderWidth = 1
-        settingsButton.layer.cornerRadius = 10
-        settingsButton.layer.borderColor = UIColor.white.cgColor
-        stickersButton.layer.borderWidth = 1
-        stickersButton.layer.cornerRadius = 10
-        stickersButton.layer.borderColor = UIColor.white.cgColor
-        placeButton.layer.borderWidth = 1
-        placeButton.layer.cornerRadius = 15
-        placeButton.layer.borderColor = UIColor.white.cgColor
+        //stickersButton.layer.borderWidth = 1
+        //stickersButton.layer.cornerRadius = 10
+        //stickersButton.layer.borderColor = UIColor.white.cgColor
+        //placeButton.layer.borderWidth = 1
+        //placeButton.layer.cornerRadius = 15
+        //placeButton.layer.cornerRadius = 0.5 * placeButton.frame.width/2
+        //placeButton.layer.borderColor = UIColor.white.cgColor
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

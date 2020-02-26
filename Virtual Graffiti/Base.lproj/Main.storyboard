@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16092.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3g4-vS-zI3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3g4-vS-zI3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16082.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,35 +19,46 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </arscnView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuz-JQ-vlr">
-                                <rect key="frame" x="299" y="772" width="75" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuz-JQ-vlr">
+                                <rect key="frame" x="324" y="777" width="50" height="45.5"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Mq0-yM-Hnf"/>
-                                    <constraint firstAttribute="width" constant="75" id="uaI-F4-hFo"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="50b-tH-8St"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="BuT-Ko-ZR2"/>
                                 </constraints>
-                                <state key="normal" title="Settings">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="gear" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="light"/>
                                 </state>
                                 <connections>
                                     <action selector="SettingsButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="tW5-Sj-o8B"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hs6-Kb-o7a">
-                                <rect key="frame" x="40" y="772" width="75" height="50"/>
+                                <rect key="frame" x="40" y="773" width="50" height="47.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="TOd-q8-rdh"/>
+                                    <constraint firstAttribute="width" constant="50" id="kg3-ei-Ngj"/>
                                     <constraint firstAttribute="height" constant="50" id="u0E-3r-1AE"/>
                                 </constraints>
-                                <state key="normal" title="Stickers">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="square.grid.2x2.fill" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="StickersButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="o78-Uy-cPq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VY1-0H-LBr">
-                                <rect key="frame" x="184" y="732" width="46" height="30"/>
-                                <state key="normal" title="Place">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VY1-0H-LBr">
+                                <rect key="frame" x="160" y="672.5" width="94" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="DqZ-eV-qSm"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="94" id="diR-7z-Ns4"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="circle" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -57,12 +68,11 @@
                             <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="cuz-JQ-vlr" secondAttribute="bottom" constant="40" id="48r-ib-sl9"/>
                             <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="cuz-JQ-vlr" secondAttribute="trailing" constant="40" id="4IJ-F8-W4h"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
-                            <constraint firstItem="VY1-0H-LBr" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="184" id="Ods-cw-zQa"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="VpT-BR-CcM"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
                             <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="Hs6-Kb-o7a" secondAttribute="bottom" constant="40" id="bF5-J7-bdo"/>
                             <constraint firstItem="Hs6-Kb-o7a" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="40" id="fGA-iR-rsj"/>
-                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="VY1-0H-LBr" secondAttribute="trailing" constant="184" id="iXL-AP-yjt"/>
+                            <constraint firstItem="VY1-0H-LBr" firstAttribute="centerX" secondItem="U0K-SW-4ec" secondAttribute="centerX" id="naY-9w-N3M"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
                             <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="VY1-0H-LBr" secondAttribute="bottom" constant="100" id="vf4-aE-p8V"/>
                         </constraints>
@@ -80,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1315.9420289855072" y="756.69642857142856"/>
+            <point key="canvasLocation" x="1314.4927536231885" y="756.69642857142856"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="vzG-Ep-Gt1">
@@ -290,6 +300,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="tortoise" catalog="system" width="128" height="68"/>
+        <image name="circle" catalog="system" width="64" height="60"/>
+        <image name="gear" catalog="system" width="64" height="58"/>
+        <image name="square.grid.2x2.fill" catalog="system" width="64" height="56"/>
+        <image name="tortoise" catalog="system" width="64" height="34"/>
     </resources>
 </document>
