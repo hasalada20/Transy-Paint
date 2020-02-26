@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3g4-vS-zI3">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3g4-vS-zI3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -118,7 +116,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="SLp-9n-hvo">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SLp-9n-hvo" id="1vp-Rz-sGE">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -131,10 +129,112 @@
                             <outlet property="delegate" destination="B86-s4-JKw" id="v4v-F2-nUs"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="bnt-VT-9FT" kind="show" identifier="Sign In" id="N8f-7a-5Yn"/>
+                        <segue destination="927-8j-Idp" kind="show" identifier="Friends" id="OGV-Do-saZ"/>
+                        <segue destination="5IP-BI-Anh" kind="show" identifier="How-To" id="E3U-91-aXk"/>
+                        <segue destination="x1V-F4-O9f" kind="show" identifier="About" id="lKc-6k-uzF"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uut-h1-Lph" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2077" y="70"/>
+        </scene>
+        <!--Friends Scene-->
+        <scene sceneID="hv3-3m-eKs">
+            <objects>
+                <viewController title="Friends Scene" id="927-8j-Idp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1EX-IN-UxE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="friends view" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ubh-QK-FhH">
+                                <rect key="frame" x="159" y="327" width="106" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5TJ-BL-iii"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0og-EZ-dtQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ef-Pm-9lJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3048" y="408"/>
+        </scene>
+        <!--How-To Scene-->
+        <scene sceneID="rId-Nn-avf">
+            <objects>
+                <viewController title="How-To Scene" id="5IP-BI-Anh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hZw-D2-fe4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="How-To Screen" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EQv-t0-MGA">
+                                <rect key="frame" x="159" y="431" width="127" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="I8L-Bo-5Be"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="C6K-hE-eTo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ElI-0i-u3W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3057" y="1048"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IpV-bU-jbY">
+            <objects>
+                <viewController id="x1V-F4-O9f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eTy-Lg-9EV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="About the &quot;devs&quot;" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GnA-m5-iY2">
+                                <rect key="frame" x="159" y="431" width="138" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Biz-mt-xkN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0Y2-c6-bMv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bc2-zY-81P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3064" y="1686"/>
+        </scene>
+        <!--Log In View-->
+        <scene sceneID="3LO-ZV-8xY">
+            <objects>
+                <viewController title="Log In View" id="bnt-VT-9FT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OyU-ql-som">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sign in screen" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q61-2q-sK7">
+                                <rect key="frame" x="118" y="320" width="119" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="lGV-ne-hdh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qft-5J-zTo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3j3-G0-SPb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3048" y="-225"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0SO-iY-nU6">
