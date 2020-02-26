@@ -95,6 +95,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         performSegue(withIdentifier: "MainToStickers", sender: self)
     }
     
+    @IBAction func PlaceButtonPressed(_ sender: Any) {
+        
+    }
+    
     // check before segue for passing variables to new views, checking for existing classes, etc.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     }
