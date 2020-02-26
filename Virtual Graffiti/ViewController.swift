@@ -16,6 +16,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet weak var settingsButton: UIButton!
     @IBOutlet weak var stickersButton: UIButton!
+    @IBOutlet weak var placeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +39,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         stickersButton.layer.borderWidth = 1
         stickersButton.layer.cornerRadius = 10
         stickersButton.layer.borderColor = UIColor.white.cgColor
-        
+        placeButton.layer.borderWidth = 1
+        placeButton.layer.cornerRadius = 15
+        placeButton.layer.borderColor = UIColor.white.cgColor
     }
     
     override func viewWillAppear(_ animated: Bool) {
