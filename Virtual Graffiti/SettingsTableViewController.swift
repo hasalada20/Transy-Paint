@@ -2,7 +2,8 @@
 //  SettingsTableViewController.swift
 //  Virtual Graffiti
 //
-//  Created by Adriaan Engelbrecht on 2/25/20.
+//  Created by Hunter Salada, Austin Lamb, Hunter Bennett on 2/25/20.
+//  With help from Adriaan Engelbrecht
 //  Copyright © 2020 hunter. All rights reserved.
 //
 
@@ -10,7 +11,7 @@ import UIKit
 
 class SettingsTableViewController: UITableViewController {
     
-    let options: Array<String> = ["Log In", "Friends", "How-To", "About"]
+    let options: Array<String> = ["Sign In", "Friends", "How-To", "About", "dumbBitch"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +50,7 @@ class SettingsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // If seque identifier is same as text in cell...
         // performsegue(withidentifier: options[indexpath.row])
+        performSegue(withIdentifier: options[indexPath.row], sender: self)
     }
 
     /*
