@@ -16,6 +16,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet weak var settingsButton: UIButton!
     @IBOutlet weak var stickersButton: UIButton!
+    @IBOutlet weak var placeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.delegate = self
         
         // Show statistics such as fps and timing information
-        sceneView.showsStatistics = true
+        sceneView.showsStatistics = false
         
         // Create a new scene
         let scene = SCNScene(named: "art.scnassets/ship.scn")!
@@ -32,12 +33,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Set the scene to the view
         sceneView.scene = scene
         
-        settingsButton.layer.borderWidth = 1
-        settingsButton.layer.cornerRadius = 10
-        settingsButton.layer.borderColor = UIColor.white.cgColor
-        stickersButton.layer.borderWidth = 1
-        stickersButton.layer.cornerRadius = 10
-        stickersButton.layer.borderColor = UIColor.white.cgColor
+        //stickersButton.layer.borderWidth = 1
+        //stickersButton.layer.cornerRadius = 10
+        //stickersButton.layer.borderColor = UIColor.white.cgColor
+        //placeButton.layer.borderWidth = 1
+        //placeButton.layer.cornerRadius = 15
+        //placeButton.layer.cornerRadius = 0.5 * placeButton.frame.width/2
+        //placeButton.layer.borderColor = UIColor.white.cgColor
         
     }
     
@@ -84,6 +86,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
     }
     
+    // MARK: - ACTIONS FROM MAIN VIEW
+    
     // Function called when Settings button is pressed
     @IBAction func SettingsButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "MainToSettings", sender: self)
@@ -91,6 +95,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     // Function called when Stickers button is pressed
     @IBAction func StickersButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "MainToStickers", sender: self)
+    }
+    
+    @IBAction func PlaceButtonPressed(_ sender: Any) {
+        
     }
     
     // check before segue for passing variables to new views, checking for existing classes, etc.
