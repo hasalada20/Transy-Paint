@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Virtual Graffiti
 //
-//  Created by Adriaan Engelbrecht on 2/25/20.
+//  Created by Hunter Salada on 2/25/20.
 //  Copyright © 2020 hunter. All rights reserved.
 //
 
@@ -32,14 +32,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Set the scene to the view
         sceneView.scene = scene
-        
-        //stickersButton.layer.borderWidth = 1
-        //stickersButton.layer.cornerRadius = 10
-        //stickersButton.layer.borderColor = UIColor.white.cgColor
-        //placeButton.layer.borderWidth = 1
-        //placeButton.layer.cornerRadius = 15
-        //placeButton.layer.cornerRadius = 0.5 * placeButton.frame.width/2
-        //placeButton.layer.borderColor = UIColor.white.cgColor
         
     }
     
@@ -92,11 +84,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBAction func SettingsButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "MainToSettings", sender: self)
     }
+    
     // Function called when Stickers button is pressed
     @IBAction func StickersButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "MainToStickers", sender: self)
     }
     
+    // Function called when the place button is pressed
     @IBAction func PlaceButtonPressed(_ sender: Any) {
         
     }

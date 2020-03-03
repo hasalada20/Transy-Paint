@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuz-JQ-vlr">
@@ -128,29 +128,6 @@
             </objects>
             <point key="canvasLocation" x="667" y="70"/>
         </scene>
-        <!--Some Dumb Bitch-->
-        <scene sceneID="JbF-aR-90x">
-            <objects>
-                <viewController title="Some Dumb Bitch" id="4Lf-aD-ed3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="j1j-9I-6ac">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tortoise" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="962-KH-gbX">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="qPy-v9-SZS"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="iYc-ay-dSe"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LXv-EB-Eoq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1136" y="-893"/>
-        </scene>
         <!--Settings Table View Controller-->
         <scene sceneID="Pch-1K-qyI">
             <objects>
@@ -179,7 +156,6 @@
                         <segue destination="927-8j-Idp" kind="show" identifier="Friends" id="OGV-Do-saZ"/>
                         <segue destination="5IP-BI-Anh" kind="show" identifier="How-To" id="E3U-91-aXk"/>
                         <segue destination="x1V-F4-O9f" kind="show" identifier="About" id="lKc-6k-uzF"/>
-                        <segue destination="4Lf-aD-ed3" kind="show" identifier="dumbBitch" id="19Z-OQ-WpX"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uut-h1-Lph" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -281,6 +257,5 @@
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
-        <image name="tortoise" catalog="system" width="128" height="68"/>
     </resources>
 </document>
