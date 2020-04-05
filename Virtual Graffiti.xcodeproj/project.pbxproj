@@ -16,6 +16,7 @@
 		9E02F4C62405D48200CB44BA /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02F4C52405D48200CB44BA /* SettingsTableViewController.swift */; };
 		C6446378241325FA00FD0BFD /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6446375241325FA00FD0BFD /* Grid.swift */; };
 		C644637A2413264600FD0BFD /* StickerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64463792413264600FD0BFD /* StickerCollectionViewController.swift */; };
+		D9985797242EE76300C1C6D6 /* StickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9985796242EE76300C1C6D6 /* StickerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9E02F4C52405D48200CB44BA /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		C6446375241325FA00FD0BFD /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Grid.swift; path = ../../../../Downloads/Assets/Grid.swift; sourceTree = "<group>"; };
 		C64463792413264600FD0BFD /* StickerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerCollectionViewController.swift; sourceTree = "<group>"; };
+		D9985796242EE76300C1C6D6 /* StickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				9E02F4B52405D22700CB44BA /* ViewController.swift */,
 				9E02F4C52405D48200CB44BA /* SettingsTableViewController.swift */,
 				C64463792413264600FD0BFD /* StickerCollectionViewController.swift */,
+				D9985796242EE76300C1C6D6 /* StickerCell.swift */,
 				9E02F4B32405D22700CB44BA /* art.scnassets */,
 				9E02F4B72405D22700CB44BA /* Main.storyboard */,
 				9E02F4BA2405D22900CB44BA /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E02F4B62405D22700CB44BA /* ViewController.swift in Sources */,
+				D9985797242EE76300C1C6D6 /* StickerCell.swift in Sources */,
 				C644637A2413264600FD0BFD /* StickerCollectionViewController.swift in Sources */,
 				9E02F4B22405D22700CB44BA /* AppDelegate.swift in Sources */,
 				C6446378241325FA00FD0BFD /* Grid.swift in Sources */,
