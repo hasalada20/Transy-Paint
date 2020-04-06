@@ -54,7 +54,7 @@ class LoginViewController: UIViewController {
         }
         
         // Store data: STORES LOCALLY FOR NOW
-        UserDefaults.standard.set(newEmail, forKey:"userEmail");
+        UserDefaults.standard.set(newEmail!+"@transy.edu", forKey:"userEmail");
         UserDefaults.standard.set(newPass, forKey:"userPass");
         UserDefaults.standard.synchronize();
         
