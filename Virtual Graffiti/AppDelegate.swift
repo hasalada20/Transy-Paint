@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Virtual Graffiti
 //
-//  Created by Adriaan Engelbrecht on 2/25/20.
+//  Created by Hunter Salada on 2/25/20.
 //  Copyright © 2020 hunter. All rights reserved.
 //
 

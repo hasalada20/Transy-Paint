@@ -9,9 +9,12 @@
 import UIKit
 
 private let reuseIdentifier = "Cell"
+private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
 
 class StickerCollectionViewController: UICollectionViewController {
 
+//    var stickerImages: Array<UIImage> = [UIImage(named: "mona-lisa.jpg")!, UIImage(named: "Salada_Character.jpg")!]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -45,13 +48,15 @@ class StickerCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 10
+        return 1
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "sticker", for: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "sticker", for: indexPath) as? StickerCell else {
+            fatalError("Unable to dequeue stickerCell")
+        }
     
-        // Configure the cell    
+        // Configure the cell
         return cell
     }
 
