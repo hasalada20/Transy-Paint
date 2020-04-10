@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77AA9081243A84CC0067FFC0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AA9080243A84CC0067FFC0 /* LoginViewController.swift */; };
 		9E02F4B22405D22700CB44BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02F4B12405D22700CB44BA /* AppDelegate.swift */; };
 		9E02F4B42405D22700CB44BA /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E02F4B32405D22700CB44BA /* art.scnassets */; };
 		9E02F4B62405D22700CB44BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02F4B52405D22700CB44BA /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		77AA9080243A84CC0067FFC0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9E02F4AE2405D22700CB44BA /* Virtual Graffiti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Virtual Graffiti.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E02F4B12405D22700CB44BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E02F4B32405D22700CB44BA /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -75,6 +77,9 @@
 				9E02F4BA2405D22900CB44BA /* Assets.xcassets */,
 				9E02F4BC2405D22900CB44BA /* LaunchScreen.storyboard */,
 				9E02F4BF2405D22900CB44BA /* Info.plist */,
+				9E02F4C52405D48200CB44BA /* SettingsTableViewController.swift */,
+				9E02F4C72405D95E00CB44BA /* StickerCollectionViewController.swift */,
+				77AA9080243A84CC0067FFC0 /* LoginViewController.swift */,
 			);
 			path = "Virtual Graffiti";
 			sourceTree = "<group>";
@@ -155,7 +160,7 @@
 				D9985797242EE76300C1C6D6 /* StickerCell.swift in Sources */,
 				C644637A2413264600FD0BFD /* StickerCollectionViewController.swift in Sources */,
 				9E02F4B22405D22700CB44BA /* AppDelegate.swift in Sources */,
-				C6446378241325FA00FD0BFD /* Grid.swift in Sources */,
+				77AA9081243A84CC0067FFC0 /* LoginViewController.swift in Sources */,
 				9E02F4C62405D48200CB44BA /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
