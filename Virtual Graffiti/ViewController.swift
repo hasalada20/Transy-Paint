@@ -19,7 +19,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var placeButton: UIButton!
     
     var grids = [Grid]()
-    let stickerSelect: Array<String> = ["salada-character", "mona-lisa", "nick", "fran", "emily", "christine", "colonel"]
+    let stickerSelect: Array<String> = ["salada-character", "mona-lisa", "nick", "fran", "emily", "christine", "austin", "hunter-b" , "colonel"]
     var selectorValue = 0
     
     override func viewDidLoad() {
