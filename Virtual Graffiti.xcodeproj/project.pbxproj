@@ -16,6 +16,7 @@
 		9E02F4BE2405D22900CB44BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E02F4BC2405D22900CB44BA /* LaunchScreen.storyboard */; };
 		9E02F4C62405D48200CB44BA /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02F4C52405D48200CB44BA /* SettingsTableViewController.swift */; };
 		C644637A2413264600FD0BFD /* StickerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64463792413264600FD0BFD /* StickerCollectionViewController.swift */; };
+		D98FD160244B8F8E00764521 /* TableViewSticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FD15F244B8F8E00764521 /* TableViewSticker.swift */; };
 		D9985797242EE76300C1C6D6 /* StickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9985796242EE76300C1C6D6 /* StickerCell.swift */; };
 		D9A11355244119E4007018A4 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A11354244119E4007018A4 /* Grid.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		9E02F4BF2405D22900CB44BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E02F4C52405D48200CB44BA /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		C64463792413264600FD0BFD /* StickerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerCollectionViewController.swift; sourceTree = "<group>"; };
+		D98FD15F244B8F8E00764521 /* TableViewSticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSticker.swift; sourceTree = "<group>"; };
 		D9985796242EE76300C1C6D6 /* StickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerCell.swift; sourceTree = "<group>"; };
 		D9A11354244119E4007018A4 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +80,7 @@
 				9E02F4BF2405D22900CB44BA /* Info.plist */,
 				9E02F4C52405D48200CB44BA /* SettingsTableViewController.swift */,
 				77AA9080243A84CC0067FFC0 /* LoginViewController.swift */,
+				D98FD15F244B8F8E00764521 /* TableViewSticker.swift */,
 			);
 			path = "Virtual Graffiti";
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E02F4B62405D22700CB44BA /* ViewController.swift in Sources */,
+				D98FD160244B8F8E00764521 /* TableViewSticker.swift in Sources */,
 				D9985797242EE76300C1C6D6 /* StickerCell.swift in Sources */,
 				C644637A2413264600FD0BFD /* StickerCollectionViewController.swift in Sources */,
 				9E02F4B22405D22700CB44BA /* AppDelegate.swift in Sources */,
