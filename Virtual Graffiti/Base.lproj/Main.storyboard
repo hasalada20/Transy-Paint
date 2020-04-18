@@ -81,7 +81,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Transy Paint" id="KRC-jN-hRB"/>
+                    <navigationItem key="navigationItem" title="Transy Paint" largeTitleDisplayMode="never" id="KRC-jN-hRB"/>
                     <connections>
                         <outlet property="placeButton" destination="VY1-0H-LBr" id="eP2-R0-hXQ"/>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
