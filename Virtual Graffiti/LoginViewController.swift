@@ -59,6 +59,18 @@ class LoginViewController: UIViewController {
             return;
         }
         
+        // Check if password is at least 8 chars
+        if(newPass!.count < 8) {
+            dispAlert(userMessage: "Password not long enough. Please try again.");
+            return;
+        }
+
+        // Check if password has a digit
+        if newPass!.rangeOfCharacter(from: CharacterSet.decimalDigits) == nil {
+            dispAlert(userMessage: "Password does not contain digit. Please try again.");
+            return;
+        }
+        
         if(newPass != newPassConfirm) {
             
             dispAlert(userMessage: "Passwords do not match. Try again.");
