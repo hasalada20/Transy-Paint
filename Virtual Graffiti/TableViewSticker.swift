@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewSticker: UITableViewController {
     
-    var stickers: Array<String> = ["Computer Man", "Mona Lisa", "Nick", "Fran", "Emily", "Christine", "Austin", "Hunter", "Colonel"]
+    var stickers: Array<String> = ["Computer Man", "Mona Lisa", "Nick", "Fran", "Emily", "Christine", "Austin", "Hunter B.", "Kellen", "Hunter S.", "Colonel", "Fran (alternate)"]
     var stickerIndex = 0
     
     
