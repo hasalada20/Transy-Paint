@@ -413,6 +413,7 @@
     <resources>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="hand.raised.fill" catalog="system" width="128" height="128"/>
+        <image name="salada-character" width="577" height="615"/>
         <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
     </resources>
 </document>
