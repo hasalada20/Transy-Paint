@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VO0-ro-Mal">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VO0-ro-Mal">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -82,18 +82,38 @@
                                     <action selector="StickersButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="o78-Uy-cPq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VY1-0H-LBr">
-                                <rect key="frame" x="160" y="617.5" width="94" height="90"/>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VY1-0H-LBr">
+                                <rect key="frame" x="156.5" y="618" width="101" height="90"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="8PZ-W3-GFY"/>
                                     <constraint firstAttribute="height" constant="90" id="DqZ-eV-qSm"/>
+                                    <constraint firstAttribute="width" constant="101" id="QZy-PW-mmU"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="94" id="diR-7z-Ns4"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" backgroundImage="hand.raised.fill" catalog="system">
+                                <state key="normal" backgroundImage="salada-character">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="PlaceButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="s8L-Zr-CVA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjS-TI-yc8">
+                                <rect key="frame" x="88" y="638.5" width="60" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" backgroundImage="arrow.left" catalog="system"/>
+                                <connections>
+                                    <action selector="leftArrowClicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="YtP-nr-6IU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xvm-GD-cWN">
+                                <rect key="frame" x="265" y="638.5" width="60" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" backgroundImage="arrow.right" catalog="system"/>
+                                <connections>
+                                    <action selector="rightArrowClicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="3hH-gY-1gN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -106,7 +126,7 @@
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
                             <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="Hs6-Kb-o7a" secondAttribute="bottom" constant="40" id="bF5-J7-bdo"/>
                             <constraint firstItem="Hs6-Kb-o7a" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="40" id="fGA-iR-rsj"/>
-                            <constraint firstItem="VY1-0H-LBr" firstAttribute="centerX" secondItem="U0K-SW-4ec" secondAttribute="centerX" id="naY-9w-N3M"/>
+                            <constraint firstItem="VY1-0H-LBr" firstAttribute="centerX" secondItem="U0K-SW-4ec" secondAttribute="centerX" id="naY-9w-N3M" customClass="currentSticker"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
                             <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="VY1-0H-LBr" secondAttribute="bottom" constant="100" id="vf4-aE-p8V"/>
                         </constraints>
@@ -114,7 +134,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Transy Paint" id="KRC-jN-hRB"/>
                     <connections>
+                        <outlet property="leftArrow" destination="OjS-TI-yc8" id="7XW-nZ-jjf"/>
                         <outlet property="placeButton" destination="VY1-0H-LBr" id="eP2-R0-hXQ"/>
+                        <outlet property="rightArrow" destination="Xvm-GD-cWN" id="2fp-c6-ngh"/>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                         <outlet property="settingsButton" destination="cuz-JQ-vlr" id="8hK-WH-dBf"/>
                         <outlet property="stickersButton" destination="Hs6-Kb-o7a" id="IfM-gD-fCb"/>
@@ -532,13 +554,15 @@
             <point key="canvasLocation" x="3048" y="-255"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow.left" catalog="system" width="64" height="48"/>
+        <image name="arrow.right" catalog="system" width="64" height="48"/>
+        <image name="gear" catalog="system" width="64" height="58"/>
+        <image name="hand.raised.fill" catalog="system" width="64" height="64"/>
+        <image name="salada-character" width="577" height="615"/>
+        <image name="square.grid.2x2.fill" catalog="system" width="64" height="56"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="g45-rf-bOm"/>
     </inferredMetricsTieBreakers>
-    <resources>
-        <image name="gear" catalog="system" width="128" height="119"/>
-        <image name="hand.raised.fill" catalog="system" width="128" height="128"/>
-        <image name="salada-character" width="577" height="615"/>
-        <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
-    </resources>
 </document>

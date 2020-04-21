@@ -17,13 +17,19 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var settingsButton: UIButton!
     @IBOutlet weak var stickersButton: UIButton!
     @IBOutlet weak var placeButton: UIButton!
+    @IBOutlet weak var leftArrow: UIButton!
+    @IBOutlet weak var rightArrow: UIButton!
+    
     
     var grids = [Grid]()
     public let stickerSelect: Array<String> = ["salada-character", "mona-lisa", "nick", "fran", "emily", "christine", "austin", "hunter-b" , "kellen", "hunter-s", "colonel", "fran-alt"]
+    
     public var selectorValue = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        placeButton.setBackgroundImage(UIImage(named: stickerSelect[selectorValue]), for: UIControl.State.normal)
         
         // Set the view's delegate
         sceneView.delegate = self
@@ -103,9 +109,26 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     
     // Function called when the place button is pressed
-    @IBAction func PlaceButtonPressed(_ sender: Any) {
+    //@IBAction func PlaceButtonPressed(_ sender: Any) {
         //performSegue(withIdentifier: "MainToWall", sender: self)
+    //    selectorValue = (selectorValue + 1) % stickerSelect.count
+    //}
+    
+    // Function called when left arrow is clicked
+    @IBAction func leftArrowClicked(_ sender: Any) {
+        if selectorValue == 0 { selectorValue = 11 }
+        else {
+            selectorValue = (selectorValue - 1) % stickerSelect.count
+        }
+        // update selected sticker
+        placeButton.setBackgroundImage(UIImage(named: stickerSelect[selectorValue]), for: UIControl.State.normal)
+    }
+    
+    // Function called when right arrow is clicked
+    @IBAction func rightArrowClicked(_ sender: Any) {
         selectorValue = (selectorValue + 1) % stickerSelect.count
+        // update selected sticker
+        placeButton.setBackgroundImage(UIImage(named: stickerSelect[selectorValue]), for: UIControl.State.normal)
     }
     
     // check before segue for passing variables to new views, checking for existing classes, etc.
