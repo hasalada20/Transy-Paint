@@ -21,18 +21,6 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        // Listen for keyboard events
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange), name: UIResponder.keyboardWillHideNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
-    }
-    
-    // deinit observers to prevent crashes
-    deinit {
-        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
-        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
     
     func dispAlert(userMessage:String) {
@@ -56,18 +44,6 @@ class LoginViewController: UIViewController {
         if(newEmail!.isEmpty || newPass!.isEmpty || newPassConfirm!.isEmpty) {
             
             dispAlert(userMessage: "Please fill out all fields.");
-            return;
-        }
-        
-        // Check if password is at least 8 chars
-        if(newPass!.count < 8) {
-            dispAlert(userMessage: "Password not long enough. Please try again.");
-            return;
-        }
-
-        // Check if password has a digit
-        if newPass!.rangeOfCharacter(from: CharacterSet.decimalDigits) == nil {
-            dispAlert(userMessage: "Password does not contain digit. Please try again.");
             return;
         }
         
@@ -99,40 +75,15 @@ class LoginViewController: UIViewController {
                 // Log in successful
                 UserDefaults.standard.set(true,forKey:"isUserLoggedIn");
                 UserDefaults.standard.synchronize();
-                
-                let v = self.storyboard?.instantiateViewController(withIdentifier:"ViewController") as! ViewController
-                self.navigationController!.pushViewController(v, animated: true)
+                self.dismiss(animated: true,completion:nil);
             }
             else {
                 dispAlert(userMessage: "Email or password incorrect. Please try again.");
             }
             
-    
-            
-        }
-        else {
-            dispAlert(userMessage: "Email or password incorrect. Please try again.");
         }
         
     }
-    
-    // Keyboard handling
-    @objc func keyboardWillChange(notification: Notification) {
-        
-        guard let keyboardRect = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
-                return
-        }
-        
-        if notification.name == UIResponder.keyboardWillShowNotification || notification.name == UIResponder.keyboardWillChangeFrameNotification {
-                view.frame.origin.y = -keyboardRect.height
-        }
-        else {
-            view.frame.origin.y = 0
-        }
-    }
-    
-    
-    
     /*
     // MARK: - Navigation
 

@@ -55,9 +55,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
         // Run the view's session
         sceneView.session.run(configuration)
-        
-        // Hide navigation controller
-        navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -65,9 +62,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Pause the view's session
         sceneView.session.pause()
-        
-        // Stop hiding navigation controller
-        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 
     // MARK: - ARSCNViewDelegate
