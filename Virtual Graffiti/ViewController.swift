@@ -19,6 +19,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var placeButton: UIButton!
     
     var grids = [Grid]()
+    public let stickerSelect: Array<String> = ["salada-character", "mona-lisa", "nick", "fran", "emily", "christine", "austin", "hunter-b" , "kellen", "hunter-s", "colonel", "fran-alt"]
+    public var selectorValue = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,16 +99,19 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     // Function called when Stickers button is pressed
     @IBAction func StickersButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "MainToStickers", sender: self)
+        performSegue(withIdentifier: "stickerTableSeg", sender: self)
     }
     
     // Function called when the place button is pressed
     @IBAction func PlaceButtonPressed(_ sender: Any) {
         //performSegue(withIdentifier: "MainToWall", sender: self)
+        selectorValue = (selectorValue + 1) % stickerSelect.count
     }
     
     // check before segue for passing variables to new views, checking for existing classes, etc.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //let vc = segue.destination as! TableViewSticker
+        //vc.stickers = self.stickerSelect
     }
     
     
@@ -151,7 +156,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // 1.
         let planeGeometry = SCNPlane(width: 0.2, height: 0.35)
         let material = SCNMaterial()
-        material.diffuse.contents = UIImage(named: "salada-character")
+        material.diffuse.contents = UIImage(named: stickerSelect[selectorValue])
         planeGeometry.materials = [material]
 
         // 2.

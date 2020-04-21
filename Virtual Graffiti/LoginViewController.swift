@@ -24,7 +24,7 @@ class LoginViewController: UIViewController {
     }
     
     func dispAlert(userMessage:String) {
-        var alert = UIAlertController(title:"Alert", message:userMessage, preferredStyle: UIAlertController.Style.alert);
+        let alert = UIAlertController(title:"Alert", message:userMessage, preferredStyle: UIAlertController.Style.alert);
         
         let okAction = UIAlertAction(title:"Ok", style:UIAlertAction.Style.default, handler:nil);
         
