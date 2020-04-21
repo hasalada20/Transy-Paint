@@ -11,7 +11,7 @@ import UIKit
 
 class SettingsTableViewController: UITableViewController {
     
-    let options: Array<String> = ["Sign In", "Friends", "How-To", "About"]
+    let options: Array<String> = ["Friends", "How-To", "About"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
