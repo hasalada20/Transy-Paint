@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3g4-vS-zI3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3g4-vS-zI3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -215,10 +215,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="To place a sticker, tap the hand button in the middle of the Camera View. You have just placed a sticker!" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnM-jH-aeZ">
-                                <rect key="frame" x="20" y="426" width="374" height="68"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnM-jH-aeZ">
+                                <rect key="frame" x="20" y="426" width="374" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">To place a sticker, tap where you want to place it! You have just placed a sticker! You can cycle to the next sticker by pressing the hand button and different stickers in one view.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -500,9 +501,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gear" catalog="system" width="64" height="58"/>
-        <image name="hand.raised.fill" catalog="system" width="64" height="64"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="hand.raised.fill" catalog="system" width="128" height="128"/>
         <image name="salada-character" width="577" height="615"/>
-        <image name="square.grid.2x2.fill" catalog="system" width="64" height="56"/>
+        <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
     </resources>
 </document>
